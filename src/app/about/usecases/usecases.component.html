@@ -5,10 +5,10 @@
       Deze applicatie is gemaakt in het kader van het vak 'Clientside web frameworks' van Avans Hogeschool
       Breda.
     </p>
-    <h3>Naam van jouw project</h3>
+    <h3>Project Bioscoop</h3>
     <p>
-      Hier beschrijft je wat je project inhoudt. Beschrijf ook de entiteiten/domeinobjecten die je gebruikt,
-      en benoem per entiteit de attributen met hun datatype.
+      In dit project wordt er een bioscoop systeem gemaakt waarin gebruikers een overzicht kunnen bekijken van
+      films, details van deze film en details over een voorstelling kunnen opvragen
     </p>
   </div>
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -21,9 +21,9 @@
         />
       </div>
       <div class="card-body">
-        <h5 class="card-title">Jouw naam hier</h5>
+        <h5 class="card-title">Jason van Adrichem</h5>
         <p class="card-text">
-          Studentnummer: 12345678
+          Studentnummer: 2124936
         </p>
       </div>
     </div>
@@ -33,30 +33,30 @@
 <h3>Entiteiten</h3>
 <div class="row">
   <div class="col-sm-12 col-md-4">
-    <p>Entiteit 1</p>
+    <p>Films</p>
     <ul>
       <li>naam: string</li>
       <li>id: number</li>
-      <li>birthdate: date</li>
-      <li>isSelected: boolean</li>
+      <li>afbeelding: string</li>
+      <li>description: string</li>
     </ul>
   </div>
   <div class="col-sm-12 col-md-4">
-    <p>Entiteit 2</p>
+    <p>Filmvoorstellingen</p>
     <ul>
       <li>naam: string</li>
       <li>id: number</li>
-      <li>birthdate: date</li>
-      <li>isSelected: boolean</li>
+      <li>datum: date</li>
+      <li>zaal: Zaal</li>
+      <li>film: Film</li>
     </ul>
   </div>
   <div class="col-sm-12 col-md-4">
-    <p>Entiteit 3</p>
+    <p>Zalen</p>
     <ul>
-      <li>naam: string</li>
       <li>id: number</li>
-      <li>birthdate: date</li>
-      <li>isSelected: boolean</li>
+      <li>aantalPlaatsen: number</li>
+      <li>filmvoorstellingen: Filmvoorstellingen</li>
     </ul>
   </div>
 </div>
@@ -68,6 +68,5 @@
     <div *ngFor="let UC of useCases">
       <app-usecase [useCase]="UC"></app-usecase>
     </div>
-    <p>Vul hier zelf meer functionaliteit toe.</p>
   </div>
 </div>
