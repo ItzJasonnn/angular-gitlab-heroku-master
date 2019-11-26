@@ -18,6 +18,5 @@ import { FilmListComponent } from './films/film-list/film-list.component'
   imports: [BrowserModule, RouterModule, NgbModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
-  //test
 })
 export class AppModule {}
