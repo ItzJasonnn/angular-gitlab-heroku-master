@@ -21,7 +21,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged & npm run lint",
-      "pre-push": "npm test & npm run e2e"
+      "pre-push": "npm test"
     }
   },
   "dependencies": {
