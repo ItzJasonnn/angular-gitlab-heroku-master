@@ -12,6 +12,8 @@ import { DashboardComponent } from './core/dashboard/dashboard.component'
 import { FilmsComponent } from './films/films.component'
 import { FilmDetailComponent } from './films/film-detail/film-detail.component'
 import { FilmListComponent } from './films/film-list/film-list.component'
+import { FilmvoorstellingComponent } from './filmvoorstelling/filmvoorstelling.component'
+import { ZaalComponent } from './zaal/zaal.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FilmListComponent } from './films/film-list/film-list.component'
     DashboardComponent,
     FilmsComponent,
     FilmDetailComponent,
-    FilmListComponent
+    FilmListComponent,
+    FilmvoorstellingComponent,
+    ZaalComponent
   ],
   imports: [BrowserModule, RouterModule, NgbModule, AppRoutingModule],
   providers: [],
