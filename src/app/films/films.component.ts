@@ -7,8 +7,6 @@ import { Film } from './film.model'
   styleUrls: ['./films.component.scss']
 })
 export class FilmsComponent implements OnInit {
-  a = new Film('Yeet', 1, 'yeet.html', 'Description Test', 'genre')
-
   selectedFilm: Film
 
   constructor() {}
