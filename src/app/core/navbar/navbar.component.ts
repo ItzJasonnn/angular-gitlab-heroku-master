@@ -26,51 +26,10 @@ import { Component, Input } from '@angular/core'
         <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" routerLink="/film" [routerLinkActive]="['active']">Films</a>
+              <a class="nav-link" routerLink="/films" [routerLinkActive]="['active']">Films</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                routerLink="/"
-                [routerLinkActive]="['active']"
-                [routerLinkActiveOptions]="{ exact: true }"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <div ngbDropdown class="d-inline-block">
-                <button class="btn btn-link" id="dropdownMenu1" ngbDropdownToggle>
-                  Actions
-                </button>
-                <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <button
-                    class="dropdown-item"
-                    routerLink="/"
-                    [routerLinkActive]="['active']"
-                    [routerLinkActiveOptions]="{ exact: true }"
-                  >
-                    Action - 1
-                  </button>
-                  <button
-                    class="dropdown-item"
-                    routerLink="/"
-                    [routerLinkActive]="['active']"
-                    [routerLinkActiveOptions]="{ exact: true }"
-                  >
-                    Another Action
-                  </button>
-                  <button
-                    class="dropdown-item"
-                    routerLink="/"
-                    [routerLinkActive]="['active']"
-                    [routerLinkActiveOptions]="{ exact: true }"
-                  >
-                    Something else is here
-                  </button>
-                </div>
-              </div>
+              <a class="nav-link" routerLink="/voorstelling" [routerLinkActive]="['active']">Voorstelling</a>
             </li>
             <li class="nav-item">
               <a

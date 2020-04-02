@@ -14,6 +14,8 @@ import { FilmDetailComponent } from './films/film-detail/film-detail.component'
 import { FilmListComponent } from './films/film-list/film-list.component'
 import { FilmvoorstellingComponent } from './filmvoorstelling/filmvoorstelling.component'
 import { ZaalComponent } from './zaal/zaal.component'
+import { LoginComponent } from './auth/login/login.component'
+import { RegisterComponent } from './auth/register/register.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ZaalComponent } from './zaal/zaal.component'
     FilmDetailComponent,
     FilmListComponent,
     FilmvoorstellingComponent,
-    ZaalComponent
+    ZaalComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [BrowserModule, RouterModule, NgbModule, AppRoutingModule],
   providers: [],
